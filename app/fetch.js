@@ -13,6 +13,8 @@ $characters.innerHTML+=`
 <h2>${personaje.name}</h2>
 <h3><b>Nombre:</b> ${personaje.name}</h3>
 <h3><b>Especie:</b> ${personaje.species}</h3>
+<h3><b>Año de nacimiento:</b> ${personaje.yearOfBirth}</h3>
+<h3><b>Actor:</b> ${personaje.actor}</h3>
 </div>
 </div>
 `

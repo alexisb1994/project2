@@ -76,9 +76,10 @@ body {
     
 
     section.characters div.character div.character-title{
-      background-color: aquamarine;
-      color: red;
-      text-align: center;
+      /* background-color: aquamarine; */
+      /* color: red; */
+      /* text-align: center; */
+      width: 100%;
     }
     section.characters div.character div.character-title h2{
       font-size: 40px;
@@ -88,4 +89,6 @@ body {
       font-weight: lighter;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-      
+      h3{
+        text-align: left;
+      }
