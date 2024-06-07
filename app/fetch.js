@@ -11,10 +11,29 @@ $characters.innerHTML+=`
 <img src="${personaje.image}" alt="imagen de ${personaje.name}">
 <div class="character-title">
 <h2>${personaje.name}</h2>
-<h3><b>Nombre:</b> ${personaje.name}</h3>
-<h3><b>Especie:</b> ${personaje.species}</h3>
-<h3><b>Año de nacimiento:</b> ${personaje.yearOfBirth}</h3>
-<h3><b>Actor:</b> ${personaje.actor}</h3>
+
+<div class="character-profile">
+<div>
+<h3>Nombre:</h3>
+<p>${personaje.name}</p>
+</div>
+
+<div>
+<h3>Especie:</h3>
+<p>${personaje.species}</p>
+</div>
+
+<div>
+<h3>Año de nacimiento:</h3>
+<p>${personaje.yearOfBirth}</p>
+</div>
+
+<div>
+<h3>Actor:</h3>
+<p>${personaje.actor}</p>
+</div>
+
+</div>
 </div>
 </div>
 `
