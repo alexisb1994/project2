@@ -72,7 +72,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
+
     }
+section.characters .character:hover{
+border: 1px solid white;
+transform: scale(1.1);
+
+}
+    
     section.characters div.character div.character-img{
       width: 50%;
     }
@@ -112,3 +120,19 @@ body {
         font-size: 20px;
         margin-left: 10px;
       }
+
+section.buscador{
+margin: 20px 0px;
+
+}    
+section.buscador h2{
+  font-size: 35px;
+  color: white;
+  
+}
+
+section.buscador input{
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+}
