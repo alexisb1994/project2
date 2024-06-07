@@ -53,7 +53,7 @@ body {
   }
 
    section.characters {
-    min-height: 100vh;
+    /* min-height: 10vh; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
@@ -61,6 +61,8 @@ body {
     color: white;
    
     }
+    
+
     
     section.characters div.character{
       background-color: rgb(79, 79, 79);
@@ -70,6 +72,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    }
+    section.characters div.character div.character-img{
+      width: 50%;
     }
 
     section.characters img{
