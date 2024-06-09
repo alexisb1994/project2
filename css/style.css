@@ -40,7 +40,8 @@ main {
   /* max-width: 900px; */
   margin: 0 auto;
   background-image: url(../assets/image/dining-room-5114247_1920.jpg);
-min-height: 100vh;
+  background-size: cover;
+  min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: baseline;
@@ -75,7 +76,7 @@ section.galery{
     align-items: center;
     justify-content: center; */
       padding: 10px 0px;
-      margin-bottom: 20px;
+      margin: 20px;
       background-image: url(../assets/image/fondo1.jpg);
 background-size: cover;
     }
@@ -86,7 +87,7 @@ background-size: cover;
   /* flex-direction: column; */
  }
 
-.title-galery{
+.title-galery, .title-films{
   display: flex;
   flex-direction: column;
 font-size: 60px;
@@ -98,7 +99,7 @@ section.galery  img{
 }
 section.galery h3{
 font-size: 30px;
-/* color: aquamarine; */
+/* color: aqua  marine; */
 }
 
 .card-film, .card-book,.card-characters{
@@ -121,6 +122,49 @@ border:1px solid white;
 transform: scale(1.1);
 
 }
+/*
+*/
+#films{
+  background-image: url(../assets/image/fondofilms.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 10px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit; /* Mantén el color igual que el enlace normal */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000000;
+}
+
+th, td {
+  border: 1px solid #f5c1c1;
+  padding: 8px;
+  text-align: left;
+  font-size: 20px;
+}
+
+th {
+  background-color:#b18b8b;
+}
+
+tr:hover {
+  background-color: #575757; /* Cambia el color de fondo al pasar el cursor */
+}
+
+
  section.characters {
   /* min-height: 10vh; */
   display: grid;
