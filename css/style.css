@@ -39,7 +39,7 @@ main {
 .intro {
   /* max-width: 900px; */
   margin: 0 auto;
-  background-image: url(../assets/image/dining-room-5114247_1920.jpg);
+  background-image: url(../assets/image/fondo1.jpg);
   background-size: cover;
   min-height: 100vh;
 display: flex;
@@ -64,20 +64,12 @@ footer {
   width: 100%;
   bottom: 0;
 }
-/* section.intro{
-
-} */
 
 section.galery{
-  /* min-height: 100vh; */
-  /* background-color: aqua; */
-    /* display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center; */
+ 
       padding: 10px 0px;
       margin: 20px;
-      background-image: url(../assets/image/fondo1.jpg);
+      background-image: url(../assets/image/dining-room-5114247_1920.jpg);
 background-size: cover;
     }
  .galery-card{
@@ -87,22 +79,28 @@ background-size: cover;
   /* flex-direction: column; */
  }
 
-.title-galery, .title-films{
+.title-galery, .title-films,.title-book{
   display: flex;
   flex-direction: column;
 font-size: 60px;
 font-style: italic;
 }    
     
-section.galery  img{
+.galery  img{
   height: 200px;
 }
-section.galery h3{
+.galery h3{
 font-size: 30px;
 /* color: aqua  marine; */
 }
 
+.card-img{
+
+
+}
+
 .card-film, .card-book,.card-characters{
+  
     width: 10%;
     padding:30px ;
     margin: 20px ;
@@ -112,6 +110,7 @@ font-size: 30px;
 cursor: pointer;
 transition: transform 0.5s ease;
 font-style: italic;
+text-align: center;
 }
 .card-film img, .card-book img,.card-characters img{
   width: 100%;
@@ -124,16 +123,19 @@ transform: scale(1.1);
 }
 /*
 */
-#films{
-  background-image: url(../assets/image/fondofilms.jpg);
-  background-size: cover;
+#films, #books{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
+
+#films{
+  background-image: url(../assets/image/fondofilms.jpg);
+  background-size: cover;
+ }
 a{
   color: white;
   text-decoration: none;
@@ -163,8 +165,65 @@ th {
 tr:hover {
   background-color: #575757; /* Cambia el color de fondo al pasar el cursor */
 }
+#books{
+    background-image: url(../assets/image/fondobook.jpg);
+  background-size: cover;
+ }
+
+ .card{
+  width: 70%;
+ }
+.card ol{
+display: flex;
+flex-direction: column;
+
+}
+.card ol li {
+  text-align: left;
+  margin-bottom: 5px;
+ 
+}
+.list-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-style: italic;
+  background-color: #ef5151;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 150px; */
+  background-color: rgba(92, 23, 23, 0.318);
+   padding: 10px;
+}
+.list-img img{
+height: 150px;
+margin-right: 20px;
+}
+.list-description{
+font-size: 20px;
+width: 100%;
+}
+ol li::marker {
+  color: white 
+  font-weight: bold; 
+  font-size: 20px;
+}
+ ol li:hover{
+background-color: #000000;
+
+ }
+
+ /*
 
 
+
+ */
  section.characters {
   /* min-height: 10vh; */
   display: grid;
@@ -174,9 +233,21 @@ tr:hover {
   color: white;
  
   }
-  
+  .character-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+        text-decoration: none;
+    color: inherit;
+  }
 
-  
+  .character-img{
+    width: 100%;
+  }
+
+
   section.characters div.character{
     background-color: rgb(79, 79, 79);
   border-radius: 10px;
