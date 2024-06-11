@@ -443,4 +443,7 @@ border: 1px solid white;
 .intro p {
   font-size: 20px;
 }
+main{
+  padding: 0px;
+}
 }
