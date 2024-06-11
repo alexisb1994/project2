@@ -267,11 +267,11 @@ ol li:hover {
 
 /* Characters Section */
 section.characters {
-  /* min-height: 10vh; */
+ 
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 15px;
-  /* background-color: rgb(0, 0, 0); */
+  
   color: white;
  
   }
@@ -446,4 +446,5 @@ border: 1px solid white;
 main{
   padding: 0px;
 }
+.card{ width: 100%;}
 }
