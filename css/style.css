@@ -427,5 +427,20 @@ border: 1px solid white;
   section.characters{
     grid-template-columns: repeat(1, 1fr);
     }
+    .card-film, .card-book, .card-characters{
+      width: 100px;
+    height: 100px
+    }
+    .galery h3 {
+      font-size: 20px;
+  }
+  h2{
 
+  }
+  .intro h1,.title-galery, .title-films, .title-book,h2 {
+    font-size: 40px;
+}
+.intro p {
+  font-size: 20px;
+}
 }
