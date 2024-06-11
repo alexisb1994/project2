@@ -198,7 +198,7 @@ th {
 }
 
 tr:hover {
-  background-color: #575757;
+  background-color: #52525254;
 }
 
 /* Books Section */
@@ -429,7 +429,8 @@ border: 1px solid white;
     }
     .card-film, .card-book, .card-characters{
       width: 100px;
-    height: 100px
+    height: 100px;
+    margin: 10px;
     }
     .galery h3 {
       font-size: 20px;
