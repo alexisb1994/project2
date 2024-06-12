@@ -285,19 +285,15 @@ section.characters {
   }
 
   .character-img{
-    /* width: 100%; */
-    padding-top: 10px;
+      padding-top: 10px;
   }
 
 
   section.characters div.character{
     background-image: url(../assets/image/paper.webp);
     background-size: cover;
-    
-    background-position: center;
+        background-position: center;
     background-repeat: no-repeat;
-
-
     /* background-color: rgb(79, 79, 79); */
   border-radius: 10px;
   padding: 10px;
@@ -328,7 +324,7 @@ animation-fill-mode: both;
 
 section.characters .character:hover{
 border: 1px solid white;
-/* transform: scale(1.1); */
+
 
 }
   
@@ -387,11 +383,6 @@ border: 1px solid white;
   color: var(--text-light);
 }
 
-/* .buscador input {
-  position: relative;
-  padding: 15px 40px;
-  border-radius: 10px;
-} */
 .input-with-icon {
   position: relative;
   width: fit-content;
@@ -454,7 +445,10 @@ border-radius: 10px ;
       section.characters{
   grid-template-columns: repeat(2, 1fr);
   }
-  
+  section.characters div.character div.character-title div.character-profile h3 {
+    font-weight: bold;
+      
+    }
 }
 
 @media (max-width:660px) {

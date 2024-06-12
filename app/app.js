@@ -98,7 +98,7 @@ const peliculas = [
         clasificacion: "A partir de 13 años",
         duracion: "2h 26min"
       },
-    // Puedes agregar más objetos de películas aquí
+    
   ];
 
   peliculas.forEach(pelicula => agregarPelicula(pelicula));
