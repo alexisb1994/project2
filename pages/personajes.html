@@ -6,6 +6,7 @@
     <title>Personajes - Proyecto Harry Potter</title>
     <!-- <link rel="stylesheet" href="../css/character.css" /> -->
 <link rel="stylesheet" href="../css/style.css">  
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
   <body>
     <header>
@@ -22,7 +23,13 @@
         
         <section class="buscador">
             <h2>PERSONAJES</h2>
-            <input id="inpDePersonajes" type="text" placeholder="Buscar personaje..." autocomplete="off">
+
+            <div class="input-with-icon">
+              <i class='bx bx-search-alt-2'></i>
+              <input id="inpDePersonajes" type="text" placeholder="Buscar personaje..." autocomplete="off">
+            </div>
+            
+            
            
         </section>
       <section class="characters">
@@ -51,7 +58,7 @@
           }
         },
         "color": {
-          "value": "#f7ff84"
+          "value": "#6afcfb"
         },
         "shape": {
           "type": "circle",

@@ -3,7 +3,7 @@
   --text-light: white;
   --text-dark: black;
   --highlight: rgba(0, 0, 0, 0.166);
-  --border-gray: rgb(255, 225, 0);
+  --border-gray: rgb(83, 83, 83);
   --border-hover: white;
   --font-impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   --font-secondary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -90,12 +90,12 @@ footer {
 /* Gallery Section */
 .galery {
   padding: 10px 0;
-  
   background-image: url(../assets/image/dining-room-5114247_1920.jpg);
   background-size: cover;
 }
 
 .galery-card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +113,7 @@ footer {
 }
 
 .galery h3 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* Card Styles */
@@ -123,7 +123,7 @@ footer {
 }
 
 .card-film, .card-book, .card-characters {
-  color:rgb(255, 225, 0);
+  color:rgb(0, 238, 255);
   display: flex;
   justify-content: center;
   align-items: end;
@@ -132,8 +132,8 @@ footer {
     margin: 20px;
     background-size: cover;
   background-color: var(--highlight);
-  border: 1px solid var(--border-gray);
-  border-radius: 40px;
+  border: 3px solid var(--border-gray);
+  border-radius: 100%;
   cursor: pointer;
   transition: transform 0.5s ease;
   font-style: italic;
@@ -365,7 +365,11 @@ border: 1px solid white;
 
 /* Search Section */
 .buscador {
-  margin: 20px 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .buscador h2 {
@@ -373,10 +377,31 @@ border: 1px solid white;
   color: var(--text-light);
 }
 
-.buscador input {
+/* .buscador input {
+  position: relative;
   padding: 15px 40px;
   border-radius: 10px;
+} */
+.input-with-icon {
+  position: relative;
+  width: fit-content;
 }
+
+#inpDePersonajes {
+  padding: 10px;
+  padding-left: 30px; /* Ajusta este valor según el tamaño del ícono */
+border-radius: 10px ;
+}
+
+.input-with-icon .bx {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Evita que el icono intercepte clics */
+  color: #4c90ff; /* Ajusta el color del ícono */
+}
+
 
 /*Respon tablet*/
 @media (max-width:940px) {
@@ -419,11 +444,7 @@ border: 1px solid white;
       section.characters{
   grid-template-columns: repeat(2, 1fr);
   }
-  section.galery .separator{
-    
-    top:285px;
-    width: 100px%;
-  }
+  
 }
 
 @media (max-width:660px) {
