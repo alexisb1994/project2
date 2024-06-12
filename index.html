@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <header>
     <nav>
       <ul>
@@ -18,9 +19,11 @@
       </ul>
     </nav>
   </header>
-
-  <main id="menu">
+  
+  <main >
+    
     <section class="intro">
+      <div id="particles-js"></div>
       <h1>Bienvenidos al Mundo de Harry Potter</h1>
       <p>
         ¡Bienvenido a nuestra página dedicada al maravilloso mundo de Harry Potter! Aquí encontrarás descripciones
@@ -331,7 +334,7 @@
   <footer>
     <p>&copy; 2024 Proyecto Harry Potter. Todos los derechos reservados.</p>
   </footer>
-<div id="particles-js"></div>
+  
 
 <script src="./app/app.js"></script>
 <script src="./particles.min.js"></script>
@@ -340,14 +343,14 @@ particlesJS(
   {
   "particles": {
     "number": {
-      "value": 232,
+      "value": 152,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#d4c800"
+      "value": "#f7ff84"
     },
     "shape": {
       "type": "circle",
@@ -393,7 +396,7 @@ particlesJS(
     },
     "move": {
       "enable": true,
-      "speed": 1.8,
+      "speed": 1,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -410,11 +413,11 @@ particlesJS(
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": "grab"
+        "enable": false,
+        "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "resize": true
