@@ -484,22 +484,13 @@ main{
 }
 .card{ width: 100%;}
 section.galery .separator{
-  width: 100px;
+  width: 100px;}
+  section.characters div.character div.character-title div.character-profile h3 {
+font-weight: bold;
+  
 }
 }
 
-/*separador*/
-section.galery{
-  position: relative;
-}
-.separator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top:285px;
-  width: 100%;
-}
 
 /*paricles-js*/
 header{
