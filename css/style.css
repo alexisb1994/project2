@@ -468,3 +468,17 @@ section.galery{
   top:285px;
   width: 100%;
 }
+
+/*paricles-js*/
+#menu {
+  z-index: 1;
+}
+#particles-js{
+  background-color: rgba(0, 0, 0, 0); /* Color de fondo */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1; /* Asegura que esté detrás de otros elementos */
+}
