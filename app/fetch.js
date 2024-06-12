@@ -15,7 +15,7 @@ fetch("https://hp-api.onrender.com/api/characters")
         <div class="character">
         <a href="https://www.google.com/search?q=${nameForSearch}&oq=harr&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGDkyCggCEAAYsQMYgAQyDQgDEAAYgwEYsQMYgAQyCggEEAAYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD0yBggIEEUYQdIBCDEzNDFqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8" target="_blank" class="character-link">
           <div class="character-img"> 
-            <img src="${personaje.image}" alt="imagen de ${personaje.name}">
+            <img src="${personaje.image}" alt="imagen de ${personaje.name}" onerror="this.onerror=null;this.src='../assets/image/errorimagen.jpg';">
           </div>  
           <div class="character-title">
             <h2>${personaje.name}</h2>
