@@ -11,11 +11,11 @@
 
 /* Global Styles */
 body {
-  
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -101,7 +101,9 @@ footer {
   justify-content: center;
 }
 
-.title-galery, .title-films, .title-book {
+.title-galery,
+.title-films,
+.title-book {
   display: flex;
   flex-direction: column;
   font-size: 60px;
@@ -117,43 +119,51 @@ footer {
 }
 
 /* Card Styles */
-.card-img{
- height: 150px;
- 
+.card-img {
+  height: 150px;
+
 }
 
-.card-film, .card-book, .card-characters {
-  color:rgb(0, 238, 255);
+.card-film,
+.card-book,
+.card-characters {
+  color: rgb(0, 238, 255);
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   width: 150px;
   height: 150px;
-    margin: 20px;
-    background-size: cover;
+  margin: 20px;
+  background-size: cover;
   background-color: var(--highlight);
   border: 3px solid var(--border-gray);
   border-radius: 100%;
   cursor: pointer;
   transition: transform 0.5s ease;
   font-style: italic;
-  text-align: center;
+
 }
- .card-film,.card-characters ,.card-book{
-  
+
+.card-film,
+.card-characters,
+.card-book {
+
   background-image: url(../assets/image/train-8044059_1280.jpg);
-  
- }
- .card-book{
+
+}
+
+.card-book {
   background-image: url(../assets/image/books-2612702_1280.jpg);
-   }
+}
 
- .card-characters{
-background-image: url(../assets/image/characters.jpg);
- }
- 
+.card-characters {
+  background-image: url(../assets/image/characters.jpg);
+}
 
-.card-film:hover, .card-book:hover, .card-characters:hover {
+
+.card-film:hover,
+.card-book:hover,
+.card-characters:hover {
   border: 1px solid var(--border-hover);
   transform: scale(1.1);
 }
@@ -187,7 +197,8 @@ table {
   background-color: var(--text-dark);
 }
 
-th, td {
+th,
+td {
   border: 1px solid #f5c1c1;
   padding: 8px;
   text-align: left;
@@ -269,32 +280,33 @@ ol li:hover {
 /* Characters Section */
 section.characters {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-    color: white;
- 
-  }
-  .character-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-        text-decoration: none;
-    color: inherit;
-  }
+  color: white;
 
-  .character-img{
-      padding-top: 10px;
-  }
+}
+
+.character-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.character-img {
+  padding-top: 10px;
+}
 
 
-  section.characters div.character{
-    background-image: url(../assets/image/paper.webp);
-    background-size: cover;
-        background-position: center;
-    background-repeat: no-repeat;
-    /* background-color: rgb(79, 79, 79); */
+section.characters div.character {
+  background-image: url(../assets/image/paper.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: rgb(79, 79, 79); */
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -302,76 +314,79 @@ section.characters {
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease;
-cursor: pointer;
-view-timeline: --container;
+  cursor: pointer;
+  view-timeline: --container;
   view-timeline-axis: block;
-animation-timeline: --container;
-animation-name: show;
-animation-range: entry 25% cover 50%;
-animation-fill-mode: both;
-  }
-  @keyframes show {
-    0% {
-        opacity: 0;
-        scale: 25%
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%
-    }
+  animation-timeline: --container;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 
-section.characters .character:hover{
-border: 1px solid white;
+@keyframes show {
+  0% {
+    opacity: 0;
+    scale: 25%
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%
+  }
+}
+
+section.characters .character:hover {
+  border: 1px solid white;
 
 
 }
-  
-  section.characters div.character div.character-img{
-    width: 50%;
-  }
 
-  section.characters img{
-    /* height: ; */
-      width: 50%;
-  }
-  
+section.characters div.character div.character-img {
+  width: 50%;
+}
 
-  section.characters div.character div.character-title div.character-profile{
-       width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    font-size: 40px;
-  }
+section.characters img {
+  /* height: ; */
+  width: 50%;
+}
 
-  
 
-  section.characters div.character div.character-title h2{
-    font-size: 40px;
-    margin: 0px;
-    color: var(--text-dark);
-  }
-  section.characters div.character div.character-title h3{
-    font-size: 25px;
-    font-weight: lighter;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    display: inline;
-    color: rgb(188, 71, 17);
+section.characters div.character div.character-title div.character-profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 40px;
+}
 
-  }
-  section.characters  p {
-      display: inline;
-      font-size: 20px;
-      margin-left: 10px;
-      color: var(--text-dark);
-    }
+
+
+section.characters div.character div.character-title h2 {
+  font-size: 40px;
+  margin: 0px;
+  color: var(--text-dark);
+}
+
+section.characters div.character div.character-title h3 {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  display: inline;
+  color: rgb(188, 71, 17);
+
+}
+
+section.characters p {
+  display: inline;
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--text-dark);
+}
 
 /* Search Section */
 .buscador {
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,8 +405,9 @@ border: 1px solid white;
 
 #inpDePersonajes {
   padding: 10px;
-  padding-left: 30px; /* Ajusta este valor según el tamaño del ícono */
-border-radius: 10px ;
+  padding-left: 30px;
+  /* Ajusta este valor según el tamaño del ícono */
+  border-radius: 10px;
 }
 
 .input-with-icon .bx {
@@ -399,15 +415,25 @@ border-radius: 10px ;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none; /* Evita que el icono intercepte clics */
-  color: #4c90ff; /* Ajusta el color del ícono */
+  pointer-events: none;
+  /* Evita que el icono intercepte clics */
+  color: #4c90ff;
+  /* Ajusta el color del ícono */
 }
 
 
 /*Respon tablet*/
 @media (max-width:940px) {
-  .intro p {font-size: 25px;}
-  table, thead, tbody, th, td, tr {
+  .intro p {
+    font-size: 25px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
 
@@ -438,73 +464,100 @@ border-radius: 10px ;
     white-space: nowrap;
     font-weight: bold;
   }
-  tr a{text-decoration: underline;}
-  tr:hover{
-    background-color: #575757;
-      }
-      section.characters{
-  grid-template-columns: repeat(2, 1fr);
+
+  tr a {
+    text-decoration: underline;
   }
+
+  tr:hover {
+    background-color: #575757;
+  }
+
+  section.characters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   section.characters div.character div.character-title div.character-profile h3 {
     font-weight: bold;
-      
-    }
+
+  }
 }
 
 @media (max-width:660px) {
-  .list{
-       flex-direction: column;
-        }
-  section.characters{
+  .list {
+    flex-direction: column;
+  }
+
+  section.characters {
     grid-template-columns: repeat(1, 1fr);
-    }
-    .card-film, .card-book, .card-characters{
-      width: 100px;
+  }
+
+  .card-film,
+  .card-book,
+  .card-characters {
+    width: 100px;
     height: 100px;
     margin: 10px;
-    }
-    .galery h3 {
-      font-size: 15px;
   }
-  
-  .intro h1,.title-galery, .title-films, .title-book,h2 {
+
+  .galery h3 {
+    font-size: 15px;
+  }
+
+  .intro h1,
+  .title-galery,
+  .title-films,
+  .title-book,
+  h2 {
     font-size: 40px;
-}
-.intro p {
-  font-size: 20px;
-}
-main{
-  padding: 5px;
-}
-.card{ width: 100%;}
-section.galery .separator{
-  width: 100px;}
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 5px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  section.galery .separator {
+    width: 100px;
+  }
+
   section.characters div.character div.character-title div.character-profile h3 {
-font-weight: bold;
-  
-}
+    font-weight: bold;
+
+  }
 }
 
 
 /*paricles-js*/
-header{
+header {
   z-index: 1;
   position: relative;
 }
-.particles-main{
+
+.particles-main {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0); /* Color de fondo */
-   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* Color de fondo */
+  width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
   z-index: 0;
-   /* Asegura que esté detrás de otros elementos */
+  /* Asegura que esté detrás de otros elementos */
 }
-.particles-character{
+
+.particles-character {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0); /* Color de fondo */
-   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* Color de fondo */
+  width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
