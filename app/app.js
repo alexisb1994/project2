@@ -3,7 +3,7 @@ const tableBody = document.querySelector("table tbody");
 const agregarPelicula = (pelicula) => {
   const peliculaHTML = `
     <tr>
-      <td data-label="PELÍCULA"><a href="${pelicula.url}" title="${pelicula.titulo}" target="_blank">${pelicula.titulo}</a></td>
+      <td data-label="PELÍCULA"><a href="${pelicula.url}" title="${pelicula.titulo}" target="_blank" style="color: aqua;"">${pelicula.titulo}</a></td>
       <td data-label="ESTRENO">${pelicula.estreno}</td>
       <td data-label="DIRECTOR">${pelicula.director}</td>
       <td data-label="CURSO">${pelicula.curso}</td>
